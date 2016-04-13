@@ -1,0 +1,15 @@
+0.  It means "a lung disease caused by the inhalation of very fine sand and ash dust"
+1.  It returns information about the resources used by the current process, or all of the terminated child processes.
+2.  There are 16 members
+3.  We know the actual values of the "before" and "after" values rather than copies, as those may have different values. 
+    Also, we want to access the actual values stored in the struct, which requires pointers.
+4.  Main goes reads one character at a time until the character that is read is not alphabetical or the maximum word length is exceeded. 
+    If the non-alphabetical character is a number, then the word is ignored. If the non-alphabetical character is anything else (namely a space), then the word is 
+    declared to be a word, terminated with a null deliminator, and passed to check(). After that, the loop just continues until the EOF character is read.
+5.  If you use fscanf alone, we will not be able to easily account for strings that have digits in them. This way, by pulling one character at a time, if we pull 
+    a digit, we can immediately skip the rest of the word.
+6.  const makes it so that it cannot be modified. This way, it cannot be changed by the function. Moreover, this way, I cannot change the word that is passed in.
+7.  I used a hash table as the data structure. This required creating a array of pointes to nodes (nodes*).
+8.  The first time I got it working, it was about .45 seconds slower than it was now, because I wrote unload() inefficiently.
+9.  I made unload more efficient, by removing some of the redundacies that I thought were necessary that, in fact, were not.
+10. I feel that maybe load() could be made slighly faster, but I think I have a fast solution already.

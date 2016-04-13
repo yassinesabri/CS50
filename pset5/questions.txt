@@ -1,0 +1,30 @@
+0. BMP:  Variable, depends on the number of bits specified in the header. 24 bits
+   is common.
+   JPEG: Supports 24-bit colour.
+   PNG: 16.7 million.
+   GIF: 256 max. 
+1.  GIF
+2.  Lossless writes the data in a more efficient way, while lossy is optimised for
+    file size.  
+3.  JPEG.
+4.  The File stays on the drive but the computer forget his location and make its space to be reused by other files or programs.
+5.  if all the zeros and ones used by those files have been reused by others.
+6.  A collection of typedefs for making integer variables of custom sizes.
+7.  You can fill up exactly the amount of space you want in a file which is good
+    for things like bitmap headers.
+8.  BYTE = 8 bits = 1 byte.
+    DWORD = 32 bits = 4 bytes.
+    LONG = signed 32 bits = 4 bytes.
+    WORD = 16 bits = 2 bytes.
+9.  Hex: 0x424d
+    ASCII: BM 
+10. bfSize is the total number of bytes in the file.
+    biSize is the number of bytes in the info header.
+11. biHeight is negative means that the bitmap is a top-down DIB with the origin at the upper left corner.
+12. biBitCount.
+13. If it can't find the file
+14. Because we're always reading a struct so we only need 1 struct.
+15. The padding would be 3, because 3 pixels * 3 bytes per pixel * 3 padding = 12, which is a multiple of 4.
+16. It moves to a specific location in a file.
+17. An integer constant which specifies that the offset provided is relative to the current file position.
+18. An algorithm that removes the noise from a picture to reveal the hidden one.
